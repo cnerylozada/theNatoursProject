@@ -1,0 +1,72 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-family: "Lato", Arial, Helvetica, sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  color: #777;
+  padding: 1.5rem;
+}
+
+section.header {
+  background-color: red;
+  background-image: -webkit-gradient(linear, left top, right bottom, from(#249b56ea), to(#2ecc708c)), url("../../images/hero.jpg");
+  background-image: linear-gradient(to right bottom, #249b56ea, #2ecc708c), url("../../images/hero.jpg");
+  background-size: cover;
+  height: 95vh;
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%);
+          clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+section.header div {
+  margin: 0 auto;
+}
+
+section.header div h1, section.header div h3 {
+  text-transform: uppercase;
+  color: white;
+  font-weight: 400;
+  letter-spacing: 2rem;
+}
+
+section.header div h1 {
+  font-size: 3.5rem;
+  margin-bottom: 1.2rem;
+}
+
+section.header div h3 {
+  font-size: 1.5rem;
+  letter-spacing: .85rem;
+  margin-bottom: 4rem;
+}
+
+section.header button {
+  width: 15rem;
+  margin: 0 auto;
+  padding: 1.2rem;
+  background-color: white;
+  border-radius: 2rem;
+  border: none;
+  cursor: pointer;
+}
+
+section.header button span {
+  font-size: .95rem;
+  text-transform: uppercase;
+}
+/*# sourceMappingURL=style.css.map */

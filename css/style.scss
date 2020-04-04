@@ -1,0 +1,14 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: "Lato", Arial, Helvetica, sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    color: #777;
+    padding: 1.5rem;
+}
+@import 'commons/index';
+@import 'modules/header';
