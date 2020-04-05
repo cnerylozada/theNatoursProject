@@ -10,17 +10,17 @@ body {
   font-weight: 400;
   font-size: 16px;
   color: #777;
-  padding: 1.5rem;
+  padding: 1.8rem;
 }
 
 section.header {
-  background-color: red;
   background-image: -webkit-gradient(linear, left top, right bottom, from(#249b56ea), to(#2ecc708c)), url("../../images/hero.jpg");
   background-image: linear-gradient(to right bottom, #249b56ea, #2ecc708c), url("../../images/hero.jpg");
   background-size: cover;
   height: 95vh;
   -webkit-clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%);
           clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%);
+  position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -31,6 +31,13 @@ section.header {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+}
+
+section.header img {
+  position: absolute;
+  top: 2rem;
+  left: 2rem;
+  width: 4.5rem;
 }
 
 section.header div {
@@ -47,12 +54,92 @@ section.header div h1, section.header div h3 {
 section.header div h1 {
   font-size: 3.5rem;
   margin-bottom: 1.2rem;
+  -webkit-animation-name: moveInLeft;
+          animation-name: moveInLeft;
+  -webkit-animation-duration: 1.5s;
+          animation-duration: 1.5s;
+  -webkit-animation-timing-function: ease-out;
+          animation-timing-function: ease-out;
+}
+
+@-webkit-keyframes moveInLeft {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateX(-80px);
+            transform: translateX(-80px);
+  }
+  80% {
+    -webkit-transform: translateX(10px);
+            transform: translateX(10px);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+}
+
+@keyframes moveInLeft {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateX(-80px);
+            transform: translateX(-80px);
+  }
+  80% {
+    -webkit-transform: translateX(10px);
+            transform: translateX(10px);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
 }
 
 section.header div h3 {
   font-size: 1.5rem;
   letter-spacing: .85rem;
   margin-bottom: 4rem;
+  -webkit-animation-name: moveInRight;
+          animation-name: moveInRight;
+  -webkit-animation-duration: 1.5s;
+          animation-duration: 1.5s;
+  -webkit-animation-timing-function: ease-out;
+          animation-timing-function: ease-out;
+}
+
+@-webkit-keyframes moveInRight {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateX(80px);
+            transform: translateX(80px);
+  }
+  80% {
+    -webkit-transform: translateX(-10px);
+            transform: translateX(-10px);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+}
+
+@keyframes moveInRight {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateX(80px);
+            transform: translateX(80px);
+  }
+  80% {
+    -webkit-transform: translateX(-10px);
+            transform: translateX(-10px);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
 }
 
 section.header button {
@@ -60,6 +147,7 @@ section.header button {
   margin: 0 auto;
   padding: 1.2rem;
   background-color: white;
+  color: inherit;
   border-radius: 2rem;
   border: none;
   cursor: pointer;
