@@ -1,0 +1,15 @@
+.titleSection {
+    text-align: center;
+    font-size: 1.35rem;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+
+    &--natourTheme {
+        background: -webkit-linear-gradient(green, yellow);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+    &--seaTheme {
+        color: red
+    }
+}

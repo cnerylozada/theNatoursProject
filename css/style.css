@@ -228,6 +228,35 @@ body {
           animation-timing-function: ease-out;
 }
 
+.titleSection {
+  text-align: center;
+  font-size: 1.35rem;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+}
+
+.titleSection--natourTheme {
+  background: -webkit-linear-gradient(green, yellow);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.titleSection--seaTheme {
+  color: red;
+}
+
+.titleContent {
+  text-transform: uppercase;
+  font-size: 1rem;
+  margin-top: 2rem;
+  margin-bottom: 1.3rem;
+}
+
+.textContent {
+  font-size: 1rem;
+  line-height: 1.8rem;
+}
+
 .row {
   max-width: 71.25rem;
   margin: 0 auto;
@@ -297,5 +326,14 @@ body {
 
 .header__title {
   margin: 0 auto;
+}
+
+.about {
+  padding-top: 5rem;
+  background-color: rgba(231, 231, 231, 0.3);
+}
+
+.about__title {
+  margin-bottom: 5rem;
 }
 /*# sourceMappingURL=style.css.map */

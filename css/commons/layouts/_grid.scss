@@ -1,12 +1,11 @@
 .row {
     max-width: $grid-width;
     margin: 0 auto;
+    display: flex;
     
     &:not(:last-of-type) {
         margin-bottom: $gutter-vertical;
     }
-    
-    display: flex;
 
     [class^="col-"] {
         &:not(:last-of-type) {
