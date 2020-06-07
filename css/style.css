@@ -228,6 +228,46 @@ body {
           animation-timing-function: ease-out;
 }
 
+.row {
+  max-width: 71.25rem;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.row:not(:last-of-type) {
+  margin-bottom: 5rem;
+}
+
+.row [class^="col-"]:not(:last-of-type) {
+  margin-right: 3.75rem;
+}
+
+.row .col-1-of-2 {
+  width: calc((100% - 3.75rem) / 2);
+}
+
+.row .col-1-of-3 {
+  width: calc((100% - 2 * 3.75rem) / 3);
+}
+
+.row .col-2-of-3 {
+  width: calc(2 * (100% - 2 * 3.75rem) / 3 + 3.75rem);
+}
+
+.row .col-1-of-4 {
+  width: calc((100% - 3 * 3.75rem) / 4);
+}
+
+.row .col-2-of-4 {
+  width: calc(2 * (100% - 3 * 3.75rem) / 4 + 3.75rem);
+}
+
+.row .col-3-of-4 {
+  width: calc(3 * (100% - 3 * 3.75rem) / 4 + 2 * 3.75rem);
+}
+
 .header {
   background-image: -webkit-gradient(linear, left top, right bottom, from(#249b56ea), to(#2ecc708c)), url("../../images/hero.jpg");
   background-image: linear-gradient(to right bottom, #249b56ea, #2ecc708c), url("../../images/hero.jpg");
