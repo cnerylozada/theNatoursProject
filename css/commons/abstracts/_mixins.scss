@@ -1,0 +1,15 @@
+@mixin getTheme($theme) {
+    @include #{$theme}Theme;
+}
+
+@mixin natourTheme {
+    background: linear-gradient(to right, $green-light-gradient, $green-dark-gradient);
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+@mixin seaTheme {
+    background: linear-gradient(to right, $blue-light-gradient, $blue-dark-gradient);
+    -webkit-background-clip: text;
+    color: transparent;
+}

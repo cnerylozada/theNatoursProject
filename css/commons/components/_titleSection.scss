@@ -5,11 +5,9 @@
     letter-spacing: 3px;
 
     &--natourTheme {
-        background: -webkit-linear-gradient(green, yellow);
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
+        @include getTheme(natour);
     }
     &--seaTheme {
-        color: red
+        @include getTheme(sea);
     }
 }

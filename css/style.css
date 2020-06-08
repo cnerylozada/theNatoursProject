@@ -236,13 +236,17 @@ body {
 }
 
 .titleSection--natourTheme {
-  background: -webkit-linear-gradient(green, yellow);
+  background: -webkit-gradient(linear, left top, right top, from(#2ecc708c), to(#249b56ea));
+  background: linear-gradient(to right, #2ecc708c, #249b56ea);
   -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  color: transparent;
 }
 
 .titleSection--seaTheme {
-  color: red;
+  background: -webkit-gradient(linear, left top, right top, from(#34d2dd8c), to(#40199cea));
+  background: linear-gradient(to right, #34d2dd8c, #40199cea);
+  -webkit-background-clip: text;
+  color: transparent;
 }
 
 .titleContent {
@@ -328,12 +332,13 @@ body {
   margin: 0 auto;
 }
 
-.about {
-  padding-top: 5rem;
+.aboutSection {
+  padding: 15rem 0;
   background-color: rgba(231, 231, 231, 0.3);
+  margin-top: -8rem;
 }
 
-.about__title {
-  margin-bottom: 5rem;
+.aboutSection__title {
+  margin-bottom: 4rem;
 }
 /*# sourceMappingURL=style.css.map */
