@@ -1,5 +1,9 @@
 @mixin getTheme($theme) {
-    @include #{$theme}Theme;
+    @if $theme == 'natour' {
+        @include natourTheme();
+    } @else if $theme == 'sea' {
+        @include seaTheme();
+    }
 }
 
 @mixin natourTheme {

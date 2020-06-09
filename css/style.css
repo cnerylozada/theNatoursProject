@@ -229,7 +229,7 @@ body {
 }
 
 .titleSection {
-  text-align: center;
+  display: inline-block;
   font-size: 1.35rem;
   text-transform: uppercase;
   letter-spacing: 3px;
@@ -240,6 +240,14 @@ body {
   background: linear-gradient(to right, #2ecc708c, #249b56ea);
   -webkit-background-clip: text;
   color: transparent;
+  -webkit-transition: all .2s;
+  transition: all .2s;
+}
+
+.titleSection--natourTheme:hover {
+  -webkit-transform: skewY(2deg) skewX(20deg) scale(1.1);
+          transform: skewY(2deg) skewX(20deg) scale(1.1);
+  text-shadow: 0.3rem 1rem 0.8rem rgba(0, 0, 0, 0.2);
 }
 
 .titleSection--seaTheme {
@@ -247,6 +255,14 @@ body {
   background: linear-gradient(to right, #34d2dd8c, #40199cea);
   -webkit-background-clip: text;
   color: transparent;
+  -webkit-transition: all .2s;
+  transition: all .2s;
+}
+
+.titleSection--seaTheme:hover {
+  -webkit-transform: skewY(2deg) skewX(20deg) scale(1.1);
+          transform: skewY(2deg) skewX(20deg) scale(1.1);
+  text-shadow: 0.3rem 1rem 0.8rem rgba(0, 0, 0, 0.2);
 }
 
 .titleContent {
@@ -339,6 +355,7 @@ body {
 }
 
 .aboutSection__title {
+  text-align: center;
   margin-bottom: 4rem;
 }
 /*# sourceMappingURL=style.css.map */
