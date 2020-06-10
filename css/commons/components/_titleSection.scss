@@ -14,10 +14,9 @@
 
     &--natourTheme {
         @include getTheme("natour");
-        @include customTextEffect();
     }
     &--seaTheme {
         @include getTheme("sea");
-        @include customTextEffect();
     }
+    @include customTextEffect();
 }

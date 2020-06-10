@@ -125,6 +125,10 @@ body {
   }
 }
 
+.u-margin-bottom-1and5 {
+  margin-bottom: 1.5rem;
+}
+
 .btn {
   width: 15rem;
   margin: 0 auto;
@@ -233,6 +237,8 @@ body {
   font-size: 1.35rem;
   text-transform: uppercase;
   letter-spacing: 3px;
+  -webkit-transition: all .2s;
+  transition: all .2s;
 }
 
 .titleSection--natourTheme {
@@ -240,14 +246,6 @@ body {
   background: linear-gradient(to right, #2ecc708c, #249b56ea);
   -webkit-background-clip: text;
   color: transparent;
-  -webkit-transition: all .2s;
-  transition: all .2s;
-}
-
-.titleSection--natourTheme:hover {
-  -webkit-transform: skewY(2deg) skewX(20deg) scale(1.1);
-          transform: skewY(2deg) skewX(20deg) scale(1.1);
-  text-shadow: 0.3rem 1rem 0.8rem rgba(0, 0, 0, 0.2);
 }
 
 .titleSection--seaTheme {
@@ -255,11 +253,9 @@ body {
   background: linear-gradient(to right, #34d2dd8c, #40199cea);
   -webkit-background-clip: text;
   color: transparent;
-  -webkit-transition: all .2s;
-  transition: all .2s;
 }
 
-.titleSection--seaTheme:hover {
+.titleSection:hover {
   -webkit-transform: skewY(2deg) skewX(20deg) scale(1.1);
           transform: skewY(2deg) skewX(20deg) scale(1.1);
   text-shadow: 0.3rem 1rem 0.8rem rgba(0, 0, 0, 0.2);
@@ -268,13 +264,61 @@ body {
 .titleContent {
   text-transform: uppercase;
   font-size: 1rem;
-  margin-top: 2rem;
-  margin-bottom: 1.3rem;
 }
 
 .textContent {
   font-size: 1rem;
   line-height: 1.8rem;
+}
+
+.textContent:not(:last-of-type) {
+  margin-bottom: 2rem;
+}
+
+.linkButton {
+  border: none;
+  background: none;
+  -webkit-transition: all .2s;
+  transition: all .2s;
+}
+
+.linkButton:hover {
+  -webkit-transform: translateY(-0.2rem);
+          transform: translateY(-0.2rem);
+  text-shadow: 0.3rem 1rem 0.8rem rgba(0, 0, 0, 0.2);
+}
+
+.linkButton a {
+  display: inline-block;
+  padding: .8rem;
+  font-size: .9rem;
+  text-decoration: none;
+}
+
+.linkButton--green {
+  border-bottom: 1px solid #249b56ea;
+}
+
+.linkButton--green a {
+  color: #249b56ea;
+}
+
+.linkButton--green a:hover {
+  color: white;
+  background-color: #249b56ea;
+}
+
+.linkButton--blue {
+  border-bottom: 1px solid #40199cea;
+}
+
+.linkButton--blue a {
+  color: #40199cea;
+}
+
+.linkButton--blue a:hover {
+  color: white;
+  background-color: #40199cea;
 }
 
 .row {
@@ -357,5 +401,9 @@ body {
 .aboutSection__title {
   text-align: center;
   margin-bottom: 4rem;
+}
+
+.aboutSection__buttonContainer {
+  margin-top: 2rem;
 }
 /*# sourceMappingURL=style.css.map */
