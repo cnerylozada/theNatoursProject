@@ -317,6 +317,44 @@ body {
   background-color: #40199cea;
 }
 
+.galery {
+  position: relative;
+}
+
+.galery__photo {
+  border-radius: 2px;
+  -webkit-box-shadow: 0 0.8rem 1.5rem rgba(0, 0, 0, 0.3);
+          box-shadow: 0 0.8rem 1.5rem rgba(0, 0, 0, 0.3);
+  z-index: 10;
+  position: absolute;
+  outline-offset: 1rem;
+  -webkit-transition: all .2s;
+  transition: all .2s;
+}
+
+.galery__photo--p1 {
+  left: 0;
+}
+
+.galery__photo--p2 {
+  top: 2rem;
+  right: 0;
+}
+
+.galery__photo--p3 {
+  top: 7rem;
+  left: 5rem;
+}
+
+.galery__photo:hover {
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+  z-index: 20;
+  outline: 0.8rem solid #249b56ea;
+  -webkit-box-shadow: 0 1rem 1.5rem rgba(0, 0, 0, 0.2);
+          box-shadow: 0 1rem 1.5rem rgba(0, 0, 0, 0.2);
+}
+
 .row {
   max-width: 71.25rem;
   margin: 0 auto;

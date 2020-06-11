@@ -1,20 +1,14 @@
 .aboutSection {
-    padding: 15rem 0;
-    background-color: $section-background-color;
-    margin-top: -8rem;
-    &__title {
-      text-align: center;
-      margin-bottom: 4rem;
-    }
-  
-    &__contentLeft {
-    }
+  padding: 15rem 0;
+  background-color: $section-background-color;
+  margin-top: -8rem;
 
-    &__buttonContainer {
-      margin-top: 2rem;
-    }
-  
-    &__contentRight {
-  
-    }
+  &__title {
+    text-align: center;
+    margin-bottom: 4rem;
+  }
+
+  &__buttonContainer {
+    margin-top: 2rem;
+  }
 }

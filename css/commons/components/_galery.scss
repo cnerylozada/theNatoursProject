@@ -1,0 +1,32 @@
+.galery {
+    position: relative;
+    &__photo {
+        border-radius: 2px;
+        box-shadow: 0 .8rem 1.5rem rgba($color: #000000, $alpha: .3);
+        z-index: 10;
+        position: absolute;
+        outline-offset: 1rem;
+        transition: all .2s;
+
+        &--p1 {
+            left: 0;
+        }
+
+        &--p2 {
+            top: 2rem;
+            right: 0;
+        }
+
+        &--p3 {
+            top: 7rem;
+            left: 5rem;
+        }
+
+        &:hover {
+            transform: scale(1.05);
+            z-index: 20;
+            outline: .8rem solid $green-dark-gradient;
+            box-shadow: 0 1rem 1.5rem rgba($color: #000000, $alpha: .2);
+        }
+    }
+}
