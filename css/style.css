@@ -125,7 +125,7 @@ body {
   }
 }
 
-.u-margin-bottom-1and5 {
+.u-margin-bottom-small {
   margin-bottom: 1.5rem;
 }
 
@@ -276,48 +276,44 @@ body {
 }
 
 .linkButton {
-  border: none;
-  background: none;
+  display: inline-block;
+  padding: .8rem;
+  font-size: .9rem;
+  text-decoration: none;
   -webkit-transition: all .2s;
   transition: all .2s;
 }
 
 .linkButton:hover {
-  -webkit-transform: translateY(-0.2rem);
-          transform: translateY(-0.2rem);
-  text-shadow: 0.3rem 1rem 0.8rem rgba(0, 0, 0, 0.2);
+  color: white;
+  -webkit-transform: translateY(-0.15rem);
+          transform: translateY(-0.15rem);
+  -webkit-box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+          box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
 }
 
-.linkButton a {
-  display: inline-block;
-  padding: .8rem;
-  font-size: .9rem;
-  text-decoration: none;
+.linkButton:active {
+  -webkit-transform: translateY(0);
+          transform: translateY(0);
+  -webkit-box-shadow: 0 0.25rem 0.7rem rgba(0, 0, 0, 0.15);
+          box-shadow: 0 0.25rem 0.7rem rgba(0, 0, 0, 0.15);
 }
 
 .linkButton--green {
   border-bottom: 1px solid #249b56ea;
-}
-
-.linkButton--green a {
   color: #249b56ea;
 }
 
-.linkButton--green a:hover {
-  color: white;
+.linkButton--green:hover {
   background-color: #249b56ea;
 }
 
 .linkButton--blue {
   border-bottom: 1px solid #40199cea;
-}
-
-.linkButton--blue a {
   color: #40199cea;
 }
 
-.linkButton--blue a:hover {
-  color: white;
+.linkButton--blue:hover {
   background-color: #40199cea;
 }
 
