@@ -1,0 +1,20 @@
+.featureCard {
+    &__header {
+        display: block;
+        margin-bottom: 2rem;
+        text-align: center;
+        font-size: 3.5rem;
+        color: $green-dark-gradient;
+    }
+
+    &__title {
+        text-align: center;
+        font-weight: bold;
+        text-transform: uppercase;
+        margin-bottom: 1rem;
+    }
+
+    &__content {
+        text-align: center;
+    }
+}

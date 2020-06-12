@@ -355,6 +355,25 @@ body {
           box-shadow: 0 1rem 1.5rem rgba(0, 0, 0, 0.2);
 }
 
+.featureCard__header {
+  display: block;
+  margin-bottom: 2rem;
+  text-align: center;
+  font-size: 3.5rem;
+  color: #249b56ea;
+}
+
+.featureCard__title {
+  text-align: center;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-bottom: 1rem;
+}
+
+.featureCard__content {
+  text-align: center;
+}
+
 .row {
   max-width: 71.25rem;
   margin: 0 auto;
