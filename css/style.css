@@ -355,6 +355,15 @@ body {
           box-shadow: 0 1rem 1.5rem rgba(0, 0, 0, 0.2);
 }
 
+.featureCard {
+  background-color: rgba(255, 255, 255, 0.8);
+  -webkit-box-shadow: 0 1rem 1rem rgba(0, 0, 0, 0.15);
+          box-shadow: 0 1rem 1rem rgba(0, 0, 0, 0.15);
+  padding: 1.8rem;
+  -webkit-transition: all .3s;
+  transition: all .3s;
+}
+
 .featureCard__header {
   display: block;
   margin-bottom: 2rem;
@@ -365,13 +374,20 @@ body {
 
 .featureCard__title {
   text-align: center;
+  font-size: .95rem;
   font-weight: bold;
   text-transform: uppercase;
   margin-bottom: 1rem;
 }
 
-.featureCard__content {
+.featureCard__content p {
   text-align: center;
+  line-height: 1.5rem;
+}
+
+.featureCard:hover {
+  -webkit-transform: translateY(-1rem) scale(1.025);
+          transform: translateY(-1rem) scale(1.025);
 }
 
 .row {
@@ -443,6 +459,17 @@ body {
 
 .header__title {
   margin: 0 auto;
+}
+
+.features {
+  background-image: -webkit-gradient(linear, left top, right bottom, from(#249b56ea), to(#2ecc708c)), url("../../../images/nat-4.jpg");
+  background-image: linear-gradient(to right bottom, #249b56ea, #2ecc708c), url("../../../images/nat-4.jpg");
+  background-size: cover;
+  background-position: right bottom;
+  padding: 18rem 0;
+  margin-top: -12rem;
+  -webkit-clip-path: polygon(0 20%, 100% 0, 100% 80%, 0 100%);
+          clip-path: polygon(0 20%, 100% 0, 100% 80%, 0 100%);
 }
 
 .aboutSection {
