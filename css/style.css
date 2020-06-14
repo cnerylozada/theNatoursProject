@@ -370,7 +370,10 @@ body {
   margin-bottom: 2rem;
   text-align: center;
   font-size: 3.5rem;
-  color: #249b56ea;
+  background: -webkit-gradient(linear, left top, right top, from(#2ecc708c), to(#249b56ea));
+  background: linear-gradient(to right, #2ecc708c, #249b56ea);
+  -webkit-background-clip: text;
+  color: transparent;
 }
 
 .featureCard__content p {
@@ -474,8 +477,13 @@ body {
   background-size: cover;
   background-position: right bottom;
   padding: 18rem 0;
-  margin-top: -12rem;
-  -webkit-clip-path: polygon(0 20%, 100% 0, 100% 80%, 0 100%);
-          clip-path: polygon(0 20%, 100% 0, 100% 80%, 0 100%);
+  margin-top: -8rem;
+  -webkit-transform: skewY(-7deg);
+          transform: skewY(-7deg);
+}
+
+.features > * {
+  -webkit-transform: skewY(7deg);
+          transform: skewY(7deg);
 }
 /*# sourceMappingURL=style.css.map */

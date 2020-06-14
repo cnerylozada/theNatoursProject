@@ -20,6 +20,9 @@
   background-size: cover;
   background-position: right bottom;
   padding: 18rem 0;
-  margin-top: -12rem;
-  clip-path: polygon(0 20%, 100% 0, 100% 80%, 0 100%);
+  margin-top: -8rem;
+  transform: skewY(-7deg);
+  & > * {
+    transform: skewY(7deg);
+  }
 }

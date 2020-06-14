@@ -9,7 +9,7 @@
         margin-bottom: 2rem;
         text-align: center;
         font-size: 3.5rem;
-        color: $green-dark-gradient;
+        @include getTheme("natour");
     }
 
     &__content p{
