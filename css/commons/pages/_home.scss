@@ -12,3 +12,14 @@
     margin-top: 2rem;
   }
 }
+
+.features {
+  background-image: 
+      linear-gradient(to right bottom, $green-dark-gradient, $green-light-gradient),
+      url('../../../images/nat-4.jpg');
+  background-size: cover;
+  background-position: right bottom;
+  padding: 18rem 0;
+  margin-top: -12rem;
+  clip-path: polygon(0 20%, 100% 0, 100% 80%, 0 100%);
+}

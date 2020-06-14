@@ -2,6 +2,7 @@
     background-color: rgba($color: white, $alpha: .8);
     box-shadow: 0 1rem 1rem rgba($color: #000000, $alpha: .15);
     padding: 1.8rem;
+    text-align: center;
     
     &__header {
         display: block;
@@ -11,16 +12,7 @@
         color: $green-dark-gradient;
     }
 
-    &__title {
-        text-align: center;
-        font-size: .95rem;
-        font-weight: bold;
-        text-transform: uppercase;
-        margin-bottom: 1rem;
-    }
-
     &__content p{
-        text-align: center;
         line-height: 1.5rem;
     }
 
