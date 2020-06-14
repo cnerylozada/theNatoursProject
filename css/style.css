@@ -476,7 +476,7 @@ body {
   background-image: linear-gradient(to right bottom, #249b56ea, #2ecc708c), url("../../../images/nat-4.jpg");
   background-size: cover;
   background-position: right bottom;
-  padding: 18rem 0;
+  padding: 12rem 0;
   margin-top: -8rem;
   -webkit-transform: skewY(-7deg);
           transform: skewY(-7deg);
