@@ -385,6 +385,65 @@ body {
           transform: translateY(-1rem) scale(1.025);
 }
 
+.tourCard {
+  background-color: white;
+  text-align: center;
+  padding-bottom: 3rem;
+  -webkit-box-shadow: 0 1rem 1.5rem rgba(0, 0, 0, 0.2);
+          box-shadow: 0 1rem 1.5rem rgba(0, 0, 0, 0.2);
+}
+
+.tourCard__header {
+  position: relative;
+  height: 15rem;
+  margin-bottom: 1rem;
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+          clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+  background-size: cover;
+  background-blend-mode: screen;
+  background-position: center;
+}
+
+.tourCard__header--summer {
+  background-color: orange;
+  background-image: url("../../../images/nat-5.jpg");
+}
+
+.tourCard__header--natour {
+  background-color: green;
+  background-image: url("../../../images/nat-6.jpg");
+}
+
+.tourCard__header--sea {
+  background-color: blue;
+  background-image: url("../../../images/nat-7.jpg");
+}
+
+.tourCard__header__title {
+  position: absolute;
+  right: 1rem;
+  bottom: 2.5rem;
+  font-weight: 300;
+  font-size: 1.8rem;
+  text-transform: uppercase;
+}
+
+.tourCard__detail {
+  margin: 0 auto;
+  list-style: none;
+  width: 60%;
+}
+
+.tourCard__detail__item {
+  font-size: .95rem;
+  padding-top: 1rem;
+}
+
+.tourCard__detail__item:not(:last-of-type) {
+  padding-bottom: 1rem;
+  border-bottom: 1px solid #e6e4e4;
+}
+
 .row {
   max-width: 71.25rem;
   margin: 0 auto;
@@ -485,5 +544,16 @@ body {
 .features > * {
   -webkit-transform: skewY(7deg);
           transform: skewY(7deg);
+}
+
+.toursSection {
+  padding: 15rem 0;
+  margin-top: -6rem;
+  background-color: rgba(231, 231, 231, 0.3);
+}
+
+.toursSection__title {
+  text-align: center;
+  margin-bottom: 5rem;
 }
 /*# sourceMappingURL=style.css.map */

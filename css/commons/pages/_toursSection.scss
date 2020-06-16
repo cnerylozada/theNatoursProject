@@ -1,3 +1,10 @@
 .toursSection {
-    
+  padding: 15rem 0;
+  margin-top: -6rem;
+  background-color: $section-background-color;
+
+  &__title {
+    text-align: center;
+    margin-bottom: 5rem;
+  }
 }
