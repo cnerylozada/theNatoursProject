@@ -237,8 +237,8 @@ body {
   font-size: 1.35rem;
   text-transform: uppercase;
   letter-spacing: 3px;
-  -webkit-transition: all .2s;
-  transition: all .2s;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
 }
 
 .titleSection--natourTheme {
@@ -385,38 +385,111 @@ body {
           transform: translateY(-1rem) scale(1.025);
 }
 
-.tourCard {
+.tourCardFront {
+  background-color: white;
+}
+
+.tourCardFront__header {
+  height: 15rem;
+  margin-bottom: 1rem;
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+          clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+  background-blend-mode: screen;
+  background-size: cover;
+  background-position: center;
+}
+
+.tourCardFront__header--summer {
+  background-color: orange;
+  background-image: url("../../../images/nat-5.jpg");
+}
+
+.tourCardFront__header--natour {
+  background-color: green;
+  background-image: url("../../../images/nat-6.jpg");
+}
+
+.tourCardFront__header--sea {
+  background-color: blue;
+  background-image: url("../../../images/nat-7.jpg");
+}
+
+.tourCardFront__header__title {
+  font-weight: 300;
+  font-size: 1.8rem;
+  text-transform: uppercase;
+}
+
+.tourCardFront__detail {
+  list-style: none;
+  padding: 0 2rem 2rem 2rem;
+}
+
+.tourCardFront__detail__item {
+  font-size: 0.95rem;
+  padding-top: 1rem;
+}
+
+.tourCardFront__detail__item:not(:last-of-type) {
+  padding-bottom: 1rem;
+  border-bottom: 1px solid #e6e4e4;
+}
+
+.tourCardBack {
+  height: 100%;
+}
+
+.tourCardBack__subtitle {
+  text-transform: uppercase;
+  font-weight: 300;
+}
+
+.tourCardBack__maintitle {
+  font-size: 4rem;
+  font-weight: 100;
+}
+
+.tourCardBack__subtitle, .tourCardBack__maintitle {
+  color: white;
+}
+
+.tourCardBack--summer {
+  background-image: -webkit-gradient(linear, left top, right bottom, from(#ffd518), to(#f89500));
+  background-image: linear-gradient(to right bottom, #ffd518, #f89500);
+}
+
+.tourCardBack--forest {
+  background-image: -webkit-gradient(linear, left top, right bottom, from(#2ecc708c), to(#249b56ea));
+  background-image: linear-gradient(to right bottom, #2ecc708c, #249b56ea);
+}
+
+.flipCard {
   background: transparent;
   text-align: center;
   -webkit-perspective: 1000px;
           perspective: 1000px;
 }
 
-.tourCard__inner {
+.flipCard__inner {
   position: relative;
   width: 100%;
   height: 100%;
-  -webkit-transition: -webkit-transform 0.8s;
-  transition: -webkit-transform 0.8s;
-  transition: transform 0.8s;
-  transition: transform 0.8s, -webkit-transform 0.8s;
+  -webkit-transition: -webkit-transform 1s;
+  transition: -webkit-transform 1s;
+  transition: transform 1s;
+  transition: transform 1s, -webkit-transform 1s;
   -webkit-transform-style: preserve-3d;
           transform-style: preserve-3d;
   -webkit-box-shadow: 0 1rem 1.5rem rgba(0, 0, 0, 0.2);
           box-shadow: 0 1rem 1.5rem rgba(0, 0, 0, 0.2);
 }
 
-.tourCard__inner--front {
-  background-color: red;
-}
-
-.tourCard__inner--back {
-  background-color: orange;
+.flipCard__inner--back {
   -webkit-transform: rotateY(180deg);
           transform: rotateY(180deg);
 }
 
-.tourCard__inner--front, .tourCard__inner--back {
+.flipCard__inner--front, .flipCard__inner--back {
   position: absolute;
   width: 100%;
   height: 100%;
@@ -424,7 +497,7 @@ body {
   backface-visibility: hidden;
 }
 
-.tourCard:hover .tourCard__inner {
+.flipCard:hover .flipCard__inner {
   -webkit-transform: rotateY(180deg);
           transform: rotateY(180deg);
 }

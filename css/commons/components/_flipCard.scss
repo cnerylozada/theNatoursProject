@@ -1,0 +1,32 @@
+.flipCard {
+  background: transparent;
+  text-align: center;
+  perspective: 1000px;
+
+  &__inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    transition: transform 1s;
+    transform-style: preserve-3d;
+    box-shadow: 0 1rem 1.5rem rgba($color: #000000, $alpha: 0.2);
+
+    &--front {
+    }
+
+    &--back {
+      transform: rotateY(180deg);
+    }
+    &--front,
+    &--back {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      -webkit-backface-visibility: hidden;
+      backface-visibility: hidden;
+    }
+  }
+  &:hover &__inner {
+    transform: rotateY(180deg);
+  }
+}

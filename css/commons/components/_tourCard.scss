@@ -1,82 +1,76 @@
-.tourCard {
-  background: transparent;
-  text-align: center;
-  perspective: 1000px;
-  
-  &__inner {
-    position: relative;
-    width: 100%;
-    height: 100%;
-    transition: transform 0.8s;
-    transform-style: preserve-3d;
-    box-shadow: 0 1rem 1.5rem rgba($color: #000000, $alpha: .2);
+.tourCardFront {
+  background-color: white;
+  &__header {
+    height: 15rem;
+    margin-bottom: 1rem;
+    clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
 
-    &--front {
-      background-color: red;
-    }
-    
-    &--back {
+    background-blend-mode: screen;
+    background-size: cover;
+    background-position: center;
+
+    &--summer {
       background-color: orange;
-      transform: rotateY(180deg);
+      background-image: url("../../../images/nat-5.jpg");
     }
-    &--front, &--back {
-      position: absolute;
-      width: 100%;
-      height: 100%;
-      -webkit-backface-visibility: hidden;
-      backface-visibility: hidden;
+    &--natour {
+      background-color: green;
+      background-image: url("../../../images/nat-6.jpg");
     }
-    
+    &--sea {
+      background-color: blue;
+      background-image: url("../../../images/nat-7.jpg");
+    }
+
+    &__title {
+      font-weight: 300;
+      font-size: 1.8rem;
+      text-transform: uppercase;
+    }
   }
-  &:hover &__inner {
-    transform: rotateY(180deg);
+
+  &__detail {
+    list-style: none;
+    padding: 0 2rem 2rem 2rem;
+    &__item {
+      font-size: 0.95rem;
+      padding-top: 1rem;
+      &:not(:last-of-type) {
+        padding-bottom: 1rem;
+        border-bottom: 1px solid rgb(230, 228, 228);
+      }
+    }
   }
-  
-  // &__header {
-  //   position: relative;
-  //   height: 15rem;
-  //   margin-bottom: 1rem;
-  //   clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+}
 
-  //   background-blend-mode: screen;
-  //   background-size: cover;
-  //   background-position: center;
+.tourCardBack {
+  height: 100%;
+  &__subtitle {
+    text-transform: uppercase;
+    font-weight: 300;
+  }
+  &__maintitle {
+    font-size: 4rem;
+    font-weight: 100;
+  }
+  &__subtitle,
+  &__maintitle {
+    color: white;
+  }
 
-  //   &--summer {
-  //     background-color: orange;
-  //     background-image: url('../../../images/nat-5.jpg');
-  //   }
-  //   &--natour {
-  //     background-color: green;
-  //     background-image: url('../../../images/nat-6.jpg');
-  //   }
-  //   &--sea {
-  //     background-color: blue;
-  //     background-image: url('../../../images/nat-7.jpg');
-  //   }
+  &--summer {
+    background-image: linear-gradient(
+      to right bottom,
+      $orange-light-gradient,
+      $orange-dark-gradient
+    );
+  }
 
-  //   &__title {
-  //     // position: absolute;
-  //     // right: 1rem;
-  //     // bottom: 2.5rem;
-  //     font-weight: 300;
-  //     font-size: 1.8rem;
-  //     text-transform: uppercase;
-  //   }
-
-  // }
-  // &__detail {
-  //   margin: 0 auto;
-  //   list-style: none;
-  //   width: 70%;
-
-  //   &__item {
-  //     font-size: .95rem;
-  //     padding-top: 1rem;
-  //     &:not(:last-of-type) {
-  //       padding-bottom: 1rem;
-  //       border-bottom: 1px solid rgb(230, 228, 228);
-  //     }
-  //   }
-  // }
+  &--forest {
+    background-image: linear-gradient(
+      to right bottom,
+      $green-light-gradient,
+      $green-dark-gradient
+    );
+  }
 }
