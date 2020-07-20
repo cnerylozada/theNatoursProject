@@ -13,7 +13,7 @@
       background-color: orange;
       background-image: url("../../../images/nat-5.jpg");
     }
-    &--natour {
+    &--forest {
       background-color: green;
       background-image: url("../../../images/nat-6.jpg");
     }
@@ -21,11 +21,45 @@
       background-color: blue;
       background-image: url("../../../images/nat-7.jpg");
     }
+  }
 
-    &__title {
-      font-weight: 300;
-      font-size: 1.8rem;
-      text-transform: uppercase;
+  &__title {
+    position: absolute;
+    top: 9rem;
+    right: 1rem;
+    width: 70%;
+    text-align: right;
+
+    font-weight: 300;
+    font-size: 1.8rem;
+    text-transform: uppercase;
+    color: white;
+  }
+
+  &__titleSpanWrapper {
+    padding: 0.5rem;
+    line-height: 2.5rem;
+    box-decoration-break: clone;
+    &--summer {
+      background-image: linear-gradient(
+        to right bottom,
+        $orange-light-theme,
+        $orange-dark-theme
+      );
+    }
+    &--sea {
+      background-image: linear-gradient(
+        to right bottom,
+        $blue-light-theme,
+        $blue-dark-theme
+      );
+    }
+    &--forest {
+      background-image: linear-gradient(
+        to right bottom,
+        $green-light-theme,
+        $green-dark-theme
+      );
     }
   }
 
@@ -45,6 +79,9 @@
 
 .tourCardBack {
   height: 100%;
+  display: flex;
+  flex-direction: column;
+
   &__subtitle {
     text-transform: uppercase;
     font-weight: 300;
@@ -61,16 +98,24 @@
   &--summer {
     background-image: linear-gradient(
       to right bottom,
-      $orange-light-gradient,
-      $orange-dark-gradient
+      $orange-light-theme,
+      $orange-dark-theme
     );
   }
 
   &--forest {
     background-image: linear-gradient(
       to right bottom,
-      $green-light-gradient,
-      $green-dark-gradient
+      $green-light-theme,
+      $green-dark-theme
+    );
+  }
+
+  &--sea {
+    background-image: linear-gradient(
+      to right bottom,
+      $blue-light-theme,
+      $blue-dark-theme
     );
   }
 }
