@@ -41,25 +41,13 @@
     line-height: 2.5rem;
     box-decoration-break: clone;
     &--summer {
-      background-image: linear-gradient(
-        to right bottom,
-        $orange-light-theme,
-        $orange-dark-theme
-      );
+      @include getBackground($orange-light-theme, $orange-dark-theme);
     }
     &--sea {
-      background-image: linear-gradient(
-        to right bottom,
-        $blue-light-theme,
-        $blue-dark-theme
-      );
+      @include getBackground($blue-light-theme, $blue-dark-theme);
     }
     &--forest {
-      background-image: linear-gradient(
-        to right bottom,
-        $green-light-theme,
-        $green-dark-theme
-      );
+      @include getBackground($green-light-theme, $gree-dark-theme);
     }
   }
 
@@ -78,17 +66,20 @@
 }
 
 .tourCardBack {
-  height: 100%;
   display: flex;
+  justify-content: center;
   flex-direction: column;
+  height: 100%;
 
   &__subtitle {
     text-transform: uppercase;
     font-weight: 300;
+    margin-bottom: 1rem;
   }
   &__maintitle {
     font-size: 4rem;
     font-weight: 100;
+    margin-bottom: 6rem;
   }
   &__subtitle,
   &__maintitle {
@@ -96,26 +87,14 @@
   }
 
   &--summer {
-    background-image: linear-gradient(
-      to right bottom,
-      $orange-light-theme,
-      $orange-dark-theme
-    );
+    @include getBackground($orange-light-theme, $orange-dark-theme);
   }
 
   &--forest {
-    background-image: linear-gradient(
-      to right bottom,
-      $green-light-theme,
-      $green-dark-theme
-    );
+    @include getBackground($green-light-theme, $gree-dark-theme);
   }
 
   &--sea {
-    background-image: linear-gradient(
-      to right bottom,
-      $blue-light-theme,
-      $blue-dark-theme
-    );
+    @include getBackground($blue-light-theme, $blue-dark-theme);
   }
 }

@@ -130,9 +130,8 @@ body {
 }
 
 .btn {
-  width: 15rem;
   margin: 0 auto;
-  padding: 1.2rem;
+  padding: 1.2rem 2.5rem;
   border-radius: 2rem;
   border: none;
   cursor: pointer;
@@ -140,7 +139,7 @@ body {
 
 .btn a {
   color: #777;
-  font-size: .95rem;
+  font-size: 0.95rem;
   text-transform: uppercase;
   text-decoration: none;
 }
@@ -178,8 +177,8 @@ body {
   padding: 1.2rem;
   border-radius: 2rem;
   z-index: -1;
-  -webkit-transition: all .3s;
-  transition: all .3s;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
 }
 
 .btn--white {
@@ -444,8 +443,8 @@ body {
 }
 
 .tourCardFront__titleSpanWrapper--forest {
-  background-image: -webkit-gradient(linear, left top, right bottom, from(#2ecc70), to(#249b56));
-  background-image: linear-gradient(to right bottom, #2ecc70, #249b56);
+  background-image: -webkit-gradient(linear, left top, right bottom, from(#95cc2e), to(#249b56));
+  background-image: linear-gradient(to right bottom, #95cc2e, #249b56);
 }
 
 .tourCardFront__detail {
@@ -464,24 +463,29 @@ body {
 }
 
 .tourCardBack {
-  height: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  height: 100%;
 }
 
 .tourCardBack__subtitle {
   text-transform: uppercase;
   font-weight: 300;
+  margin-bottom: 1rem;
 }
 
 .tourCardBack__maintitle {
   font-size: 4rem;
   font-weight: 100;
+  margin-bottom: 6rem;
 }
 
 .tourCardBack__subtitle, .tourCardBack__maintitle {
@@ -494,8 +498,8 @@ body {
 }
 
 .tourCardBack--forest {
-  background-image: -webkit-gradient(linear, left top, right bottom, from(#2ecc70), to(#249b56));
-  background-image: linear-gradient(to right bottom, #2ecc70, #249b56);
+  background-image: -webkit-gradient(linear, left top, right bottom, from(#95cc2e), to(#249b56));
+  background-image: linear-gradient(to right bottom, #95cc2e, #249b56);
 }
 
 .tourCardBack--sea {
