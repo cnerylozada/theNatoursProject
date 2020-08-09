@@ -38,10 +38,22 @@
   }
 
   &--white {
-    color: $black;
+    a {
+      color: $black;
+    }
     background-color: white;
     &::after {
       background-color: white;
+    }
+  }
+
+  &--green {
+    a {
+      color: white;
+    }
+    background-color: $green;
+    &::after {
+      background-color: $green;
     }
   }
 

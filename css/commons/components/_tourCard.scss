@@ -47,7 +47,7 @@
       @include getBackground($blue-light-theme, $blue-dark-theme);
     }
     &--forest {
-      @include getBackground($green-light-theme, $gree-dark-theme);
+      @include getBackground($green-light-theme, $green-dark-theme);
     }
   }
 
@@ -91,7 +91,7 @@
   }
 
   &--forest {
-    @include getBackground($green-light-theme, $gree-dark-theme);
+    @include getBackground($green-light-theme, $green-dark-theme);
   }
 
   &--sea {
