@@ -133,6 +133,11 @@ body {
   height: 33.2rem;
 }
 
+.u-filter-drop-shadow {
+  -webkit-filter: drop-shadow(10px 10px 10px rgba(0, 0, 0, 0.2));
+          filter: drop-shadow(10px 10px 10px rgba(0, 0, 0, 0.2));
+}
+
 .btn {
   margin: 0 auto;
   padding: 1.2rem 2.5rem;
@@ -282,6 +287,10 @@ body {
 .titleContent {
   text-transform: uppercase;
   font-size: 1rem;
+}
+
+.titleContent--white {
+  color: white;
 }
 
 .textContent {
@@ -565,6 +574,19 @@ body {
           transform: rotateY(180deg);
 }
 
+.photoCircle {
+  width: 10rem;
+  border-radius: 50%;
+}
+
+.videoBackground {
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0.15;
+  z-index: -1;
+}
+
 .row {
   max-width: 71.25rem;
   margin: 0 auto;
@@ -636,6 +658,21 @@ body {
   margin: 0 auto;
 }
 
+.story {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 60rem;
+  padding: 3.5rem 5rem;
+  background-color: rgba(255, 255, 255, 0.75);
+  -webkit-clip-path: polygon(5% 0%, 100% 0%, 95% 100%, 0% 100%);
+          clip-path: polygon(5% 0%, 100% 0%, 95% 100%, 0% 100%);
+}
+
+.story__content p {
+  line-height: 1.8rem;
+}
+
 .aboutSection {
   padding: 15rem 0;
   background-color: rgba(231, 231, 231, 0.3);
@@ -679,6 +716,31 @@ body {
 }
 
 .toursSection__bottom {
+  text-align: center;
+}
+
+.storiesSection {
+  margin-top: -6rem;
+  padding: 8rem 0;
+  position: relative;
+}
+
+.storiesSection__header {
+  text-align: center;
+  margin-bottom: 6rem;
+}
+
+.storiesSection__content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-bottom: 5rem;
+}
+
+.storiesSection__footer {
   text-align: center;
 }
 /*# sourceMappingURL=style.css.map */
