@@ -658,6 +658,12 @@ body {
           clip-path: polygon(5% 0%, 100% 0%, 95% 100%, 0% 100%);
 }
 
+.story:hover .story__image__caption {
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  opacity: 1;
+}
+
 .story:not(:last-of-type) {
   margin-bottom: 6rem;
 }
@@ -667,6 +673,19 @@ body {
   shape-outside: circle();
   -webkit-shape-outside: circle();
   margin-right: 4rem;
+  position: relative;
+}
+
+.story__image__caption {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, 50%);
+          transform: translate(-50%, 50%);
+  text-align: center;
+  opacity: 0;
+  -webkit-transition: all 0.8s;
+  transition: all 0.8s;
 }
 
 .story__content p {
