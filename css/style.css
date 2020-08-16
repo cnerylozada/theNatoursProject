@@ -579,6 +579,18 @@ body {
   border-radius: 50%;
 }
 
+.videoBackground {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  opacity: 0.15;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
 .row {
   max-width: 71.25rem;
   margin: 0 auto;
@@ -758,6 +770,7 @@ body {
 .storiesSection {
   margin-top: -6rem;
   padding: 8rem 0;
+  position: relative;
 }
 
 .storiesSection__header {
