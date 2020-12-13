@@ -1,0 +1,19 @@
+.bookingSection {
+  background-image: linear-gradient(
+    to bottom right,
+    $green-light-gradient,
+    $green-dark-gradient
+  );
+  padding: 9rem 7rem;
+  &__content {
+    background-image: url("../../../images/nat-10.jpg");
+    background-size: cover;
+  }
+  &__form {
+    width: 42rem;
+    height: 32rem;
+  }
+  &__title {
+    margin: 3rem 0;
+  }
+}

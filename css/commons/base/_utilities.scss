@@ -9,3 +9,10 @@
 .u-filter-drop-shadow {
   filter: drop-shadow(10px 10px 10px rgba(0, 0, 0, 0.2));
 }
+
+.u-form-polygon-background {
+  background-color: white;
+  clip-path: polygon(0% 0%, 100% 0%, 80% 100%, 0% 100%);
+  opacity: 0.9;
+  padding: 2rem 4rem;
+}
